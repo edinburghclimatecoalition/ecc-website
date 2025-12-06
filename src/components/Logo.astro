@@ -1,7 +1,8 @@
 ---
 import { Link } from 'accessible-astro-components'
 import { Image } from 'astro:assets'
-import logo from '../assets/img/logo.svg'
+import logoLight from '../assets/img/ecc-logo-horizontal-light.svg'
+import logoDark from '../assets/img/ecc-logo-horizontal-dark.svg'
 
 /**
  * Logo Component
@@ -20,6 +21,10 @@ const { loading = 'eager' }: Props = Astro.props
 ---
 
 <Link href="/" class="flex items-center gap-2">
-  <Image src={logo} alt="Accessible Astro Logo" width="47" height="37" loading={loading} />
-  <span class="font-bold">Accessible Astro</span>
+  <div class="block dark:hidden">
+    <Image src={logoLight} alt="Edinburgh Climate Coalition" width="120" height="60" loading={loading} />
+  </div>
+  <div class="hidden dark:block">
+    <Image src={logoDark} alt="Edinburgh Climate Coalition" width="120" height="60" loading={loading} />
+  </div>
 </Link>
