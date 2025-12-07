@@ -5,6 +5,7 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 import decapCmsOauth from 'astro-decap-cms-oauth'
+import netlify from '@astrojs/netlify'
 
 // https://astro.build/config
 export default defineConfig({
