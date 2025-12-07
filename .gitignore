@@ -31,3 +31,6 @@ package-lock.json
 
 # cursor rules
 .cursor/rules
+
+# Local Netlify folder
+.netlify
