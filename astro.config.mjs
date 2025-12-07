@@ -10,7 +10,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   compressHTML: true,
   site: 'https://accessible-astro-starter.incluud.dev',
-  integrations: [compress(), icon(), mdx(), sitemap()],
+  integrations: [icon(), mdx(), sitemap(), compress({ Exclude: '\\/ecc-logo[^/]*\\.svg$' })],
   vite: {
     css: {
       preprocessorOptions: {
