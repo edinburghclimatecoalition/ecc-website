@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config'
 import { fileURLToPath } from 'url'
-import compress from 'astro-compress'
 import icon from 'astro-icon'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
@@ -10,7 +9,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   compressHTML: true,
   site: 'https://accessible-astro-starter.incluud.dev',
-  integrations: [icon(), mdx(), sitemap(), compress({ Exclude: '\\/ecc-logo[^/]*\\.svg$' })],
+  integrations: [icon(), mdx(), sitemap()],
   vite: {
     css: {
       preprocessorOptions: {
