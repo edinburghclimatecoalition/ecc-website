@@ -5,3 +5,19 @@ backend:
   site_domain: edinburgh-climate-coalition-website.netlify.app # change this to your domain
   base_url: https://edinburgh-climate-coalition-website.netlify.app # change this to your prod URL
   auth_endpoint: oauth # the oauth route provided by the integration
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: edinburghclimatecoalition
+    api_key: 792964876782174
+
+collections:
+  - name: posts
+    label: Posts
+    label_singular: Post
+    folder: src/content/_posts
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: body, label: Body, widget: markdown }
