@@ -62,6 +62,7 @@
     "@astrojs/netlify": "^6.6.3",
     "@astrojs/sitemap": "^3.5.1",
     "@tailwindcss/vite": "^4.1.13",
-    "accessible-astro-components": "^5.0.1"
+    "accessible-astro-components": "^5.0.1",
+    "astro-decap-cms-oauth": "^0.5.1"
   }
 }

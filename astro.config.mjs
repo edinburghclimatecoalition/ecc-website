@@ -4,13 +4,15 @@ import icon from 'astro-icon'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
+import decapCmsOauth from 'astro-decap-cms-oauth'
 import netlify from '@astrojs/netlify'
 
 // https://astro.build/config
 export default defineConfig({
   compressHTML: true,
   site: 'https://accessible-astro-starter.incluud.dev',
-  integrations: [icon(), mdx(), sitemap()],
+  integrations: [icon(), mdx(), sitemap(), decapCmsOauth()],
+
   vite: {
     css: {
       preprocessorOptions: {
