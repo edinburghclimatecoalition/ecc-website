@@ -1,9 +1,9 @@
 backend:
   name: github
-  branch: main # change this to your branch
+  branch: testing # change this to your branch
   repo: edinburghclimatecoalition/ecc-website # change this to your repo
-  site_domain: edinburgh-climate-coalition-website.netlify.app # change this to your domain
-  base_url: https://edinburgh-climate-coalition-website.netlify.app # change this to your prod URL
+  site_domain: testing--edinburgh-climate-coalition-website.netlify.app # change this to your domain
+  base_url: https://testing--edinburgh-climate-coalition-website.netlify.app # change this to your prod URL
   auth_endpoint: oauth # the oauth route provided by the integration
 
 media_library:
